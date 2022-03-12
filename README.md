@@ -6,7 +6,7 @@
 
 **OpenCore : 0.7.6**
 
-**macOS ：11.5.2**
+**macOS ：11.6.4**
 
 **SMBIOS : MacPro7,1**
 
