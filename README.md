@@ -1,6 +1,6 @@
-# Hackintosh-Opencore-MAG-MSI--B550M-MORTAR-WIFI
+# Hackintosh-Opencore-MAG-MSI--B550M-MORTAR & 5600X & BCM94352Z DW1560
 
-微星(MSI)MAG B550M MORTAR WIFI迫击炮
+微星(MSI)MAG B550M MORTAR 迫击炮 & 5600X & BCM94352Z DW1560
 
 ![macOS](Pictures/macOS.png)
 
@@ -12,16 +12,16 @@
 
 ### Specification
 
-| **Component** | **Model**                  |
-| ------------------- |----------------------------|
-| CPU                 | AMD R5 5600X               |
-| Motherboard         | MSI(MAG) B550M MORTAR WIFI |
-| RAM                 | DDR4 3600HZ  16G*2         |
-| Audio Chipset       | ALCS1200A                  |
-| GPU                 | XFX RX 590 8G              |
-| Ethernet            | RTL8125B 2.5GbE            |
-| WiFi & Bluetooth    | BCM94352Z  DW1560          |
-| OS Disk(nvme)       | SN850 512G                 |
+| **Component** | **Model**                 |
+| ------------------- |---------------------------|
+| CPU                 | AMD R5 5600X              |
+| Motherboard         | MSI(MAG) B550M MORTAR |
+| RAM                 | DDR4 3600HZ  16G*2        |
+| Audio Chipset       | ALCS1200A                 |
+| GPU                 | RX 560 4G                 |
+| Ethernet            | RTL8125B 2.5GbE           |
+| WiFi & Bluetooth    | BCM94352Z  DW1560         |
+| OS Disk(nvme)       | SN850 512G                |
 
 ### What works
 
