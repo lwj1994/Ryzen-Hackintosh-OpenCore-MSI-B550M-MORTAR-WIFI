@@ -3,3 +3,6 @@
 *.idea
 *.vscode
 *.log
+/.idea
+.editorconfig
+

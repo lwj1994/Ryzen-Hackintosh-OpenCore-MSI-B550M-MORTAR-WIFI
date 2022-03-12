@@ -6,22 +6,22 @@
 
 **OpenCore : 0.7.6**
 
-**macOS ：12.1 Beta**
+**macOS ：11.5.2**
 
 **SMBIOS : MacPro7,1**
 
 ### Specification
 
-| **Component** | **Model**            |
-| ------------------- | -------------------------- |
-| CPU                 | AMD R7 3700X               |
+| **Component** | **Model**                  |
+| ------------------- |----------------------------|
+| CPU                 | AMD R5 5600X               |
 | Motherboard         | MSI(MAG) B550M MORTAR WIFI |
-| RAM                 | Kingston 16GB DDR4 2400    |
+| RAM                 | DDR4 3600HZ  16G*2         |
 | Audio Chipset       | ALCS1200A                  |
 | GPU                 | XFX RX 590 8G              |
 | Ethernet            | RTL8125B 2.5GbE            |
-| WiFi & Bluetooth    | Intel WiFi 6 AX200         |
-| OS Disk(nvme)       | kioxia RC10 1TB            |
+| WiFi & Bluetooth    | BCM94352Z  DW1560          |
+| OS Disk(nvme)       | SN850 512G                 |
 
 ### What works
 
@@ -34,20 +34,11 @@
 - USB
 - Wi-Fi
 
-  [itlwm](https://github.com/OpenIntelWireless/itlwm)
-
-  AirportItlwm.kext set the `MaxKernel` field to `20.99.9` (BigSur)
-
-  AirportItlwm12.kext set the `MinKernel` field to `21.00.0` (Monterey)
-- Bluetooth
-
-  [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware)
-
-  IntelBluetoothInjector.kext set the `MaxKernel` field to `20.99.9` (BigSur)
-
-  BlueToolFixup.kext set the `MinKernel` field to `21.00.0` (Monterey)
-
-### NEW AMD Kernel Patches
+  AirportBrcmFixup.kext（ https://github.com/acidanthera/AirportBrcmFixup ）
+  BrcmBluetoothInjector.kext（https://github.com/acidanthera/BrcmPatchRAM ）
+  BrcmFirmwareData.kext
+  BrcmPatchRAM3.kext
+-### NEW AMD Kernel Patches
 
 1. Enable `ProvideCurrentCpuInfo`
 
@@ -88,6 +79,3 @@
 
 please use [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) or  [OC Auxiliary](https://github.com/ic005k/QtOpenCoreConfig)  or  [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)  to generate yourself SMBIOS
 
-### Monterey
-
-Most MSI B550 motherboard need use the 7C94v12 version of the bios to start Monterey. Please test yourself according to your hardware.
